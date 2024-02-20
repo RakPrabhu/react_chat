@@ -1,0 +1,72 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #a18cd1, #fbc2eb, #ff9a9e);
+  background-size: 100% 100%;
+  animation: gradient 20s ease infinite;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(45deg, rgba(52, 90, 157, 0.8), rgba(250, 208, 196, 0.8), rgba(161, 140, 209, 0.8), rgba(251, 194, 235, 0.8), rgba(255, 154, 158, 0.8));
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.btn-secondary {
+  background: rgb(0, 24, 111);
+  color: #fff;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.formContainer {
+  width: 400px;
+  margin: 0 auto 0 auto;
+  padding: 32px;
+  background: rgb(53, 53, 164);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid rgb(20, 38, 174);
+  font-size: 0.9rem;
+}
+.input option {
+  margin-top: 20px;
+}
+
+.fullscreen {
+  background: url('./images/b1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
